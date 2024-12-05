@@ -162,4 +162,26 @@ $(document).ready(function () {
         });
 
     });
+
+
+     // artwork - popup
+     $(function(){
+		$('#popup01').click(function(){
+			$('#pop01').show();
+		});
+		$('#popup02').click(function(){
+			$('#pop02').show();
+		});
+		$('#popup03').click(function(){
+			$('#pop03').show();
+		});
+
+		$('#popup01, #popup02, #popup03').click(function(){
+			$('html, body').addClass('popup_hidden');
+		});
+		$('.popup i').click(function(){
+			$('.popup').hide();
+			$('html, body').removeClass('popup_hidden');
+		});
+	});
 });
